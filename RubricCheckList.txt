@@ -1,0 +1,118 @@
+Rubric with High Distinction descriptions:
+Classes:
+- more than 5 classes
+
+Account, AccountManager, Fd, Savings, User, Loan, BusinessLoan, BusinessLoanCalculator, ConcreteUser
+
+Inheritance:
+- At least 3 levels (A->B->C) and reasonable
+
+   Account                 Loan
+    /    \                   |
+   /      \                  |
+ Savings   Fd            BusinessLoan
+                             |
+                             |
+                    BusinessLoanCalculator
+
+The BusinessLoan class inherits all public and protected members from Loan.
+The BusinessLoanCalculator class inherits all public and protected members 
+from BusinessLoan (and indirectly from Loan).
+
+Private Members:
+- interestRate: The interest rate, which depends on the type of loan.
+- monthlyPayment: The calculated monthly payment.
+- totalPayment: The calculated total payment.
+Public Members:
+- A default constructor BusinessLoanCalculator().
+- calculateInterestRate(): A method to calculate the interest rate.
+- calculatePayments(): A method to calculate payments.
+- displayPaymentDetails(): A method to display payment details.
+
+Polymorphism:
+- Demonstrated and reasonable
+
+    Polymorphism is evident in the use of the greeting() method: 
+    the User class declares a pure virtual function greeting(), and the derived class ConcreteUser 
+    provides its specific implementation. This allows objects of the ConcreteUser class to be treated 
+    generically as User objects while still invoking the specialized greeting() method of ConcreteUser.
+
+Abstract Classes:
+- Implemented and reasonable
+
+    The class User is an abstract class, evident by its use of a pure virtual function greeting() const = 0;.
+    This ensures that the User class provides a common interface for its potential derived classes but cannot be instantiated on 
+    its own due to the presence of the pure virtual function.
+
+Print/display state:
+- State of object is reasonably printed or displayed by another object in the program.
+
+    There are several functions like displayLoanDetails() in the BusinessLoan class that serve as custom display functions. 
+    Example Functions used for displaying details:
+        - void displayPaymentDetails();
+        - void DisplayAccounts(Account *array);
+
+Change object state:
+- End-user can change the state of an object correctly
+
+    The code contains several setter methods such as setCash(), setusername(), and setpassword(), which allow users to modify the state of objects.
+
+Store/recall data:
+- The program can store and recall multiple entries of data/objects
+
+    Within the AccountManager there is a function called AccountManager(int csh) 
+    which allocates space for savings objects, Fd Objects and accounts with the use of 'new'
+
+Write/read data:
+- The program can write/read data from a file
+
+    The use of header files which Implements into source files (.cpp)
+
+User menu:
+- intuitive and functional
+
+    The function start_program() provides a user menu with options to manage accounts,
+    calculate business loans, and exit the program
+
+Interactiveness (I/O):
+- The program gives feedback to the user and receives input from the user as part of the
+functionalition 
+
+    This is Implemented within the whole code, shows invalid response if critera of 
+    question isnt met.
+
+Testing:
+- Evidence of unit testing that test a good portion of program in a structured way
+
+    Input and automated testing included in testing folder.
+
+Makefile:
+- Makefile builds the program.
+
+    Makefile is used to compile the code.
+
+Error handling:
+- The program can be started and would not crash or infinitely loop when unexpected input is
+provided
+
+    Program written to clear once input is made or finished with a section of program
+    for example done with accounts and retunrs to main menu it clears everything and 
+    displays only the main menu not previous inputs and objects.
+
+Input Validation:
+- The program validates user input and accepts only correct inputs.
+
+    All functions have been tested with automated testing files and manual testings to make
+    sure that that if a input is asked it either only takes int or string or float....
+
+Project plan matching:
+- The program matches plan document accurately with only minor changes
+
+    The project plan before included two types of loan but that didnt meet the inheritance critera
+    so we created a BusinessLoanCalculator which inherits data from BusinessLoan which inherts data 
+    from Loan. 
+
+Dynamic memory allocation:
+- Usefully allocates memory from the heap using new and correctly free them with delete.
+
+    ~AccountManager() is used to delete all accounts, savings and fd account and reset to 0.
