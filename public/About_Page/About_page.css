@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap'); /* Importing a custom font */
+
+/* Set background color and font for the body and carousel container */
+body,
+.carousel-container {
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 3px solid #ff3131;
+}
+
+/* Styling for the logo image */
+.logo img {
+    height: 143px;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation list item styling */
+nav ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+/* Navigation link styling */
+nav ul li a {
+    display: inline-block;
+    padding: 15px 22.5px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #ff3131;
+    font-weight: bold;
+    border: 2px solid #ff3131;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    background-color: #ddd;
+}
+
+/* Icon link styling */
+.nav-icon-link {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Icon image styling */
+.nav-icon {
+    height: 63px;
+    width: auto;
+    margin-right: 10px;
+    align-self: center;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+/* Content section styling */
+.content-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+}
+
+/* Heading styling in content section */
+.content-section h1 {
+    color: #333;
+    font-size: 2.5em;
+}
+
+/* Paragraph styling in content section */
+.content-section p {
+    font-size: 1.2em;
+    margin: 20px auto;
+    width: 60%;
+}
+
+/* Image styling in content section */
+.content-section img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+/* Button styling */
+.buttons button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Hover effect for buttons */
+.buttons button:hover {
+    background-color: #e03500;
+}
+
+/* Stay in touch section styling */
+.stay-in-touch {
+    background: #ddd;
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid #ff3131;
+    border-bottom: 3px solid #ff3131;
+}
+
+/* Heading styling in stay in touch section */
+.stay-in-touch h2 {
+    font-size: 1.5em;
+}
+
+/* Form styling in stay in touch section */
+.stay-in-touch form {
+    margin-top: 10px;
+}
+
+/* Input styling for email field */
+.stay-in-touch input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 250px;
+    border: 2px solid #ccc;
+    border-bottom: 3px solid #ff3131;
+}
+
+/* Button styling in stay in touch section */
+.stay-in-touch button {
+    padding: 10px 20px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hover effect for stay in touch button */
+.stay-in-touch button:hover {
+    background-color: #e03500;
+}
+
+/* Flexbox styling for content section */
+.content-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background: white;
+}
+
+/* Flexbox container styling */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Image scaling and positioning */
+.content-image {
+    transform: scale(1.2);
+    transform-origin: center;
+    height: auto;
+    width: auto;
+    transform: translate(160px, -10px);
+}
+
+/* Text container styling */
+.text-container {
+    flex: 1;
+    padding-left: 20px;
+}
+
+/* Buttons container styling */
+.buttons {
+    margin-top: 20px;
+}
+
+/* Buttons styling */
+.buttons button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Hover effect for buttons */
+.buttons button:hover {
+    background-color: #e03500;
+}
+
+/* Full height for HTML and body */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content styling */
+main {
+    flex: 1;
+    width: 100%;
+}
+
+/* Footer styling */
+footer {
+    background-color: #ff3131;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer navigation styling */
+footer nav {
+    width: 100%;
+}
+
+/* Footer navigation list styling */
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer navigation list item styling */
+footer nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Footer button styling */
+.footer-btn {
+    padding: 8px 16px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for footer buttons */
+.footer-btn:hover {
+    background-color: white;
+    color: #ff3131;
+}
+
+/* Footer contact section styling */
+.footer-contact {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Footer contact images styling */
+.footer-contact img {
+    width: 50px;
+    height: auto;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Removing right margin for the last contact image */
+.footer-contact img:last-child {
+    margin-right: 0;
+}
+
+/* Footer contact paragraph styling */
+.footer-contact p {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+/* Styling for the last paragraph in the footer */
+footer p:last-of-type {
+    margin-top: 0;
+}

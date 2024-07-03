@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set, viewport compatibility, and page title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Link</title>
+
+    <!-- Google font and stylesheet links -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="About_page.css">
+</head>
+<body>
+    <!-- Header section with navigation and logo -->
+    <header>
+        <div class="logo">
+            <!-- Link wraps logo for easy navigation to home -->
+            <a href="#"><img src="OrganisationLogo.png" alt="Organisation Logo"></a>
+        </div>
+        <nav>
+            <!-- Navigation menu with links to various pages -->
+            <ul>
+                <li>
+                    <!-- Link with an icon for the home page -->
+                    <a href="../Home_page/Home_page.html" class="nav-icon-link">
+                        <img src="Home.png" alt="Home Icon" class="nav-icon">
+                    </a>
+                </li>
+                <li><a href="../log-sign-in page/log_inpage.html">Login/Sign up</a></li>
+                <li><a href="About_page.html">About</a></li>
+                <li><a href="../Events_Page/Events_page.html">Events</a></li>
+                <li><a href="../Profile_Page/profile_page.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content section with welcome message and introduction to the site -->
+    <section class="content-section">
+        <div class="content-container">
+            <img src="aboutpage_img.webp" alt="Community Service" class="content-image">
+            <div class="text-container">
+                <h1>Welcome to Food Link</h1>
+                <p>Join our community to make a real difference in the world. Explore how you can contribute to various
+                    causes! We offer a range of activities that will suit you for volunteering!</p>
+                <div class="buttons">
+                    <!-- Buttons to sign up or explore more about events -->
+                    <button onclick="location.href='../log-sign-in page/log_inpage.html'">Sign Up!</button>
+                    <button onclick="location.href='../Events_Page/Events_page.html'">Explore</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section for users to subscribe to newsletters or updates -->
+    <section class="stay-in-touch">
+        <h2>Stay in Touch</h2>
+        <form action="/subscribe" method="post">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Submit!</button>
+        </form>
+    </section>
+
+    <!-- Footer with navigation and contact information -->
+    <footer>
+        <nav>
+            <!-- Footer navigation similar to the header for consistency -->
+            <ul>
+                <li><a href="../Home_Page/home_page.html" class="footer-btn">Home</a></li>
+                <li><a href="About_page.html" class="footer-btn">About</a></li>
+                <li><a href="../Events_Page/Events_page.html" class="footer-btn">Events</a></li>
+                <li><a href="../Profile_Page/profile_page.html" class="footer-btn">Profile</a></li>
+                <li><a href="../log-sign-in page/log_inpage.html" class="footer-btn">Log-In/Sign-up</a></li>
+            </ul>
+        </nav>
+        <!-- Contact icons and information -->
+        <div class="footer-contact">
+            <a href="https://www.instagram.com/foodlinkausvolunteering/" target="_blank">
+                <img src="instagram.png" alt="Instagram">
+            </a>
+            <a href="https://x.com/foodlinkwdc2024" target="_blank">
+                <img src="X.png" alt="X">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61560957178941" target="_blank">
+                <img src="FaceBook.png" alt="Facebook">
+            </a>
+            <p>Contact Us: info@volunteerhub.org</p>
+        </div>
+        <p>© 2024 Food Link. All rights reserved.</p>
+    </footer>
+
+    <script src="about_page.js"></script>
+</body>
+</html>

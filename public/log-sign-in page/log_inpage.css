@@ -1,0 +1,222 @@
+/* Importing a custom font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/* General body and carousel styles, setting the background color and font */
+body,
+.carousel-container {
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles, including layout and border settings */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 3px solid #ff3131;
+}
+
+/* Styling for the logo within the header */
+.logo img {
+    height: 143px;
+}
+
+/* Navigation styling, including the list display setup */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for each list item in the navigation */
+nav ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+/* Styling for links inside the navigation items */
+nav ul li a {
+    display: inline-block;
+    padding: 15px 22.5px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #ff3131;
+    font-weight: bold;
+    border: 2px solid #ff3131;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    background-color: #ddd;
+}
+
+/* Styles for navigation icons */
+.nav-icon-link {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-icon {
+    height: 63px;
+    width: auto;
+    margin-right: 10px;
+    align-self: center;
+}
+
+/* Full height for html and body elements, and flex display for body */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content area styling */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background: url('oggy2.png') no-repeat center center;
+    background-size: cover;
+    position: inherit;
+}
+
+/* Login and signup container styling */
+.login-container,
+.signup-container {
+    border: 2px solid #ff3131;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px 0;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(255, 6, 6, 1) 1%, rgba(247, 19, 19, 1) 40%, rgba(255, 255, 255, 1) 90%);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+
+/* Form element styling within login and signup containers */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    background-color: #ff3131;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #e60000;
+}
+
+/* Footer styles */
+footer {
+    background-color: #ff3131;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navigation within the footer */
+footer nav {
+    width: 100%;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Button styles within the footer */
+.footer-btn {
+    padding: 8px 16px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.footer-btn:hover {
+    background-color: white;
+    color: #ff3131;
+}
+
+/* Contact information styling in the footer */
+.footer-contact {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer-contact img {
+    width: 50px;
+    height: auto;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-contact img:last-child {
+    margin-right: 0;
+}
+
+.footer-contact p {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+/* Style for the last paragraph element in the footer */
+footer p:last-of-type {
+    margin-top: 0;
+}
